@@ -94,7 +94,7 @@ LPAREN = "("
 RPAREN = ")"
 NEG = "~"
 EXP = "^"
-ERR = "ERROR"
+
 
 
 
@@ -121,8 +121,6 @@ ERR = "ERROR"
 <YYINITIAL>{EXP}    { return new Token(Token.EXP); }
 
 <YYINITIAL>{NEG}    { return new Token(Token.UNARY); }
-
-<YYINITIAL>{ERR}    { return new Token(Token.ERROR); }
 
 <YYINITIAL>{DIGITOS}    { return new Token(Token.NUMBER, yytext()); }
 
