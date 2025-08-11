@@ -114,7 +114,7 @@ EXP = "^"
 
 <YYINITIAL>{MULT}    { return new Token(Token.MULT); }
 
-
+<YYINITIAL>{MOD}    { return new Token(Token.MOD); }
 
 
 
